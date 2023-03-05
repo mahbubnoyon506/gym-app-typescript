@@ -37,52 +37,46 @@ const Carousel = () => {
                 loop={true}
                 centeredSlides={true}
                 autoplay={{
-                    delay: 1000,
+                    delay: 500,
                     disableOnInteraction: false,
                 }}
                 speed={2000}
-                pagination={{
-                    clickable: true,
-                }}
+                // pagination={{
+                //     clickable: true,
+                // }}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
 
                 breakpoints={{
                     640: {
                         slidesPerView: 1,
-                        spaceBetween: 20,
+                        spaceBetween: 5,
                     },
                     768: {
                         slidesPerView: 2,
-                        spaceBetween: 40,
+                        spaceBetween: 10,
                     },
                     1024: {
                         slidesPerView: 3,
-                        spaceBetween: 50,
+                        spaceBetween: 20,
                     },
                 }}
                 className="swiperOurClasses"
             >
                 {
                     classes.map((item, index) =>
-                        <SwiperSlide>
-                            <div className="w-full h-72" style={{background: `url(${item.image})`, backgroundPosition: 'center', backgroundSize: '100%', backgroundRepeat: 'no-repeat'}}>
-                               <div>
-                                  <h4>{item.name}</h4>
-                                  <p>{item?.description}</p>
-                               </div>
+                        <SwiperSlide className="group cursor-pointer pt-5">
+                            <div className="w-full h-72" style={{ background: `url(${item.image})`, backgroundPosition: 'center', backgroundSize: '100%', backgroundRepeat: 'no-repeat' }}>
+                                <div className="bg-primary-500 opacity-70 md:bg-primary-500 md:opacity-70 md:invisible px-3 md:px-5 group-hover:transition-all group-hover:ease-in-out group-hover:duration-500 group-hover:bg-primary-500 group-hover:opacity-70 group-hover:visible text-[#fff] flex justify-center items-center h-full">
+                                    <div>
+                                        <h4 className="text-center">{item.name}</h4>
+                                        <p className="text-center">{item?.description}</p>
+                                    </div>
+                                </div>
                             </div>
                         </SwiperSlide>
                     )
                 }
-                {/* <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
-                <SwiperSlide>Slide 9</SwiperSlide> */}
             </Swiper>
         </div>
     );
@@ -122,5 +116,11 @@ const classes: ClassItems[] = [
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         image: image6,
+    },
+    {
+        name: "Ab Core Classes",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        image: image3,
     },
 ];

@@ -14,7 +14,7 @@ const OurClasses = () => {
                         enim mattis odio in risus nunc.
                     </p>
                 </div>
-                <div>
+                <div className='pb-6 md:pb-12 lg:pb-28'>
                     <Carousel />
                 </div>
             </div>

@@ -33,7 +33,7 @@ const HomeMain = () => {
             </div>
             <div className='flex justify-start items-center bg-primary-100 py-5 md:py-8 lg:py-12 pl-5 md:pl-10 lg:pl-20'>
                <img className='' src={redbull} alt="" />
-               <img className='mx-20' src={fortune} alt="" />
+               <img className='mx-20 ' src={fortune} alt="" />
                <img className='' src={forbes} alt="" />
             </div>
         </section>

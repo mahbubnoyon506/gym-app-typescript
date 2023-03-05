@@ -42,9 +42,8 @@ const Benefits = () => {
                 </div>
             </div>
             <div>
-                <div className="mt-16 md:grid grid-cols-2 items-center gap-20 md:mt-28">
+                <div className="md:grid grid-cols-2 items-center gap-20 py-6 md:py-12 lg:py-28">
                     <div className='px-5 md:pl-10 lg:pl-20'>
-
                         <img src={benefitGraphic} alt="" />
                     </div>
                     <div className='relative px-5 md:pr-10 lg:pr-20'>
@@ -75,9 +74,6 @@ const Benefits = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div>
-
                 </div>
             </div>
         </section>
