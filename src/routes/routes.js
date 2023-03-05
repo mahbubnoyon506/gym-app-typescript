@@ -1,6 +1,6 @@
 
 import {createBrowserRouter} from 'react-router-dom'
-import Benefits from '../pages/OurBenefits'
+import Benefits from '../pages/Benefits'
 import OurClasses from '../pages/Classes'
 import Contact from '../pages/Contact'
 import Main from '../layout/Main'

@@ -2,14 +2,13 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Footer from './Footer';
 import Header from './Header';
-import OurBenefits from '../pages/OurBenefits'
+import OurBenefits from '../pages/Benefits'
 
 const Main = () => {
     return (
         <div>
             <Header />
             <Outlet />
-            <OurBenefits />
             <Footer />
         </div>
     );
