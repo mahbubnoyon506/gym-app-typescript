@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Logo from '../assets/Logo.png'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { MdOutlineCancel } from 'react-icons/md'
@@ -38,7 +38,7 @@ const Header = () => {
         <nav className='h-24 flex items-center lg:px-20'>
             <div className='flex justify-between items-center relative w-full'>
                 <div className='pl-5 md:pl-10 lg:pl-0'>
-                    <img src={Logo} alt="" />
+                    <Link to='/'><img src={Logo} alt="" /></Link>
                 </div>
                 <div className='block lg:hidden bg-secondary-500 p-2 rounded-full cursor-pointer mr-5 md:mr-10 lg:mr-0' onClick={() => setShowMenu(!showMenu)}>
                     <AiOutlineMenu size={25} />
