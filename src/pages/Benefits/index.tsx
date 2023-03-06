@@ -47,7 +47,7 @@ const Benefits = () => {
                         <img src={benefitGraphic} alt="" />
                     </div>
                     <div className='relative px-5 md:pr-10 lg:pr-20'>
-                        <div className='absolute -top-20 -left-16'>
+                        <div className=' invisible md:visible absolute -top-20 -left-16'>
                             <img src={wave} alt="" />
                         </div>
                         <h3 className='text-lg md:text-xl lg:text-3xl font-extrabold text-left'>MILLIONS OF HAPPY MEMBERS GETTING <span className='text-primary-500'>FIT</span> </h3>
@@ -69,7 +69,7 @@ const Benefits = () => {
                             <div className=''>
                                 <GlobalBtn>Join Now</GlobalBtn>
                             </div>
-                            <div className='absolute left-24 top-0'>
+                            <div className='invisible md:visible absolute left-24 top-0'>
                                 <img src={sparkle} alt="" />
                             </div>
                         </div>

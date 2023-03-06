@@ -66,7 +66,7 @@ const Carousel = () => {
                 {
                     classes.map((item, index) =>
                         <SwiperSlide className="group cursor-pointer pt-5">
-                            <div className="w-full h-72" style={{ background: `url(${item.image})`, backgroundPosition: 'center', backgroundSize: '100%', backgroundRepeat: 'no-repeat' }}>
+                            <div className="w-full h-56 md:h-72" style={{ background: `url(${item.image})`, backgroundPosition: 'center', backgroundSize: '100%', backgroundRepeat: 'no-repeat' }}>
                                 <div className="bg-primary-500 opacity-70 md:bg-primary-500 md:opacity-70 md:invisible px-3 md:px-5 group-hover:transition-all group-hover:ease-in-out group-hover:duration-500 group-hover:bg-primary-500 group-hover:opacity-70 group-hover:visible text-[#fff] flex justify-center items-center h-full">
                                     <div>
                                         <h4 className="text-center">{item.name}</h4>

@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 const HomeMain = () => {
     return (
-        <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
+        <section id="home" className="gap-16 bg-gray-20 pt-10 md:py-10 md:h-full md:pb-0">
             <div className='grid md:grid-cols-2 gap-10 items-center'>
                 <div className='px-5 md:pl-10 lg:pl-20'>
                     <div className="relative">
@@ -31,9 +31,9 @@ const HomeMain = () => {
                     <img src={homePageGraphic} alt="" />
                 </div>
             </div>
-            <div className='flex justify-start items-center bg-primary-100 py-5 md:py-8 lg:py-12 pl-5 md:pl-10 lg:pl-20'>
+            <div className=' invisible md:visible flex justify-start items-center bg-primary-100 py-5 md:py-8 lg:py-12 pl-5 md:pl-10 lg:pl-20'>
                <img className='' src={redbull} alt="" />
-               <img className='mx-20 ' src={fortune} alt="" />
+               <img className=' md:mx-16 lg:mx-20 ' src={fortune} alt="" />
                <img className='' src={forbes} alt="" />
             </div>
         </section>
