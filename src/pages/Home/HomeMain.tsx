@@ -12,7 +12,10 @@ const HomeMain = () => {
     return (
         <section id="home" className="gap-16 bg-gray-20 pt-10 md:py-10 md:h-full md:pb-0">
             <div className='grid md:grid-cols-2 gap-10 items-center'>
-                <div className='px-5 md:pl-10 lg:pl-20'>
+                <div className='px-5 md:pl-10 lg:pl-20 relative'>
+                    <div className='absolute left-8 -top-12'>
+                        <img className='w-full' src={evolveText} alt="" />
+                    </div>
                     <div className="relative">
                         <div className={`before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-${evolveText}`}>
                             <img alt="home-page-text" src={homePageText} />
