@@ -12,7 +12,7 @@ import GlobalBtn from '../../shared/GlobalBtn';
 
 const Benefits = () => {
     return (
-        <section>
+        <section className='overflow-x-hidden'>
             <div className='px-5 md:px-10 lg:px-20 pt-6 md:pt-12 lg:pt-28'>
                 <div className=''>
                     <h3 className='text-lg md:text-xl lg:text-3xl font-extrabold'>MORE THAN JUST GYM.</h3>
@@ -20,7 +20,7 @@ const Benefits = () => {
                         get you to your ultimate fitness goals with ease. We provide true
                         care into each and every member.</p>
                 </div>
-                <div className='md:grid grid-cols-3 gap-10'>
+                <div className='md:grid grid-cols-3 md:gap-5 lg:gap-10'>
                     {
                         services.map((service) =>
                             <div className='mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center'>
@@ -42,15 +42,15 @@ const Benefits = () => {
                 </div>
             </div>
             <div>
-                <div className="md:grid grid-cols-2 items-center gap-20 py-6 md:py-12 lg:py-28">
+                <div className="md:grid grid-cols-2 items-center md:gap-5 lg:gap-20 py-6 md:py-12 lg:py-28">
                     <div className='px-5 md:pl-10 lg:pl-20'>
                         <img src={benefitGraphic} alt="" />
                     </div>
                     <div className='relative px-5 md:pr-10 lg:pr-20'>
-                        <div className=' invisible md:visible absolute -top-20 -left-16'>
-                            <img src={wave} alt="" />
+                        <div className=' invisible md:visible absolute md:-top-6 md:-left-6 lg:-top-20 lg:-left-16 -z-10'>
+                            <img className='md:w-3/4 lg:w-full' src={wave} alt="" />
                         </div>
-                        <h3 className='text-lg md:text-xl lg:text-3xl font-extrabold text-left'>MILLIONS OF HAPPY MEMBERS GETTING <span className='text-primary-500'>FIT</span> </h3>
+                        <h3 className='text-lg md:text-xl lg:text-3xl font-extrabold text-left z-10'>MILLIONS OF HAPPY MEMBERS GETTING <span className='text-primary-500'>FIT</span> </h3>
                         <p className="my-5">
                             Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
                             egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
@@ -66,11 +66,11 @@ const Benefits = () => {
                             enim mattis odio in risus nunc.
                         </p>
                         <div className='relative'>
-                            <div className=''>
+                            <div className='z-10'>
                                 <GlobalBtn>Join Now</GlobalBtn>
                             </div>
-                            <div className='invisible md:visible absolute left-24 top-0'>
-                                <img src={sparkle} alt="" />
+                            <div className='invisible md:visible absolute md:left-24 md:-top-5 lg:left-24 lg:top-0 -z-10'>
+                                <img className='md:w-3/4 lg:w-full' src={sparkle} alt="" />
                             </div>
                         </div>
                     </div>

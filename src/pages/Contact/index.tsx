@@ -21,7 +21,7 @@ const Contact = () => {
         console.log(data)
     };
     return (
-        <section>
+        <section className='overflow-x-hidden'>
             <div className='px-5 md:px-10 lg:px-20 py-6 md:py-12 lg:py-28'>
                 <div className='relative'>
                     <div className='pb-2 md:pb-4'>
@@ -32,8 +32,8 @@ const Contact = () => {
                             adipiscing leo egestas nisi elit risus sit. Nunc cursus sagittis.
                         </p>
                     </div>
-                    <div className='md:flex justify-between items-start z-50'>
-                        <form className='md:w-7/12 mb-5 md:mb-0' onSubmit={handleSubmit(onSubmit)}>
+                    <div className=' grid md:grid-cols-2 gap-5 lg:flex justify-between items-start z-50'>
+                        <form className=' lg:w-7/12 mb-5 md:mb-0' onSubmit={handleSubmit(onSubmit)}>
                             <div className='mb-4'>
                                 <input
                                     className={inputStyles}
@@ -102,8 +102,8 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='invisible md:visible absolute -right-10 -bottom-16 -z-10'>
-                        <img src={evolveTex} alt="" />
+                    <div className='invisible md:visible absolute md:-right-36 md:-bottom-6 lg:-right-10 lg:-bottom-16 -z-10'>
+                        <img className='md:w-1/2 lg:w-full' src={evolveTex} alt="" />
                     </div>
                 </div>
 

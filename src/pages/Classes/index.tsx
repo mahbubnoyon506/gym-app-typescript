@@ -3,7 +3,7 @@ import Carousel from './Carousel';
 
 const OurClasses = () => {
     return (
-        <section>
+        <section className='overflow-x-hidden'>
             <div className='bg-primary-100'>
                 <div className='px-5 md:px-10 lg:px-20 pt-6 md:pt-12 lg:pt-28'>
                     <h3 className='text-lg md:text-xl lg:text-3xl font-extrabold text-left'>Our Classes</h3>

@@ -14,12 +14,12 @@ import Contact from '../Contact';
 
 const Home = () => {
     return (
-        <>
+        <div className='overflow-x-hidden'>
         <HomeMain />
         <Benefits />
         <OurClasses />
         <Contact />
-        </>
+        </div>
     );
 };
 

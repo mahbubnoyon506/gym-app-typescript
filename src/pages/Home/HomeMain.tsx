@@ -10,10 +10,10 @@ import { Link } from 'react-router-dom';
 
 const HomeMain = () => {
     return (
-        <section id="home" className="gap-16 bg-gray-20 pt-10 md:py-10 md:h-full md:pb-0">
+        <section id="home" className=" bg-gray-20 pt-10 md:py-10 md:h-full md:pb-0 overflow-x-hidden">
             <div className='grid md:grid-cols-2 gap-10 items-center'>
                 <div className='px-5 md:pl-10 lg:pl-20 relative'>
-                    <div className='absolute left-8 -top-12'>
+                    <div className='absolute invisible md:visible md:left-4 lg:left-8 md:-top-6 lg:-top-12'>
                         <img className='w-full' src={evolveText} alt="" />
                     </div>
                     <div className="relative">
@@ -31,7 +31,7 @@ const HomeMain = () => {
                     </div>
                 </div>
                 <div>
-                    <img src={homePageGraphic} alt="" />
+                    <img className='md:w-3/4 lg:w-full' src={homePageGraphic} alt="" />
                 </div>
             </div>
             <div className=' invisible md:visible flex justify-start items-center bg-primary-100 py-5 md:py-8 lg:py-12 pl-5 md:pl-10 lg:pl-20'>
